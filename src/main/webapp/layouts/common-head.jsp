@@ -1,4 +1,4 @@
-<base href="http://localhost:8088/sridharjammalamadaka/">
+<base href="https://tranquil-depths-62505.herokuapp.com/">
 <script type="text/javascript" src="script/angular.min.js"></script>
 <script type="text/javascript" src="script/angular-resource.min.js"></script>
 <script type="text/javascript" src="script/angular-route.min.js"></script>
