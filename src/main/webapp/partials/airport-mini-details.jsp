@@ -1,4 +1,4 @@
-<div id="mini-container" class="project-desc-box">
+<div id="mini-container" class="project-desc-box" style="width=400px">
 	<h3>{{airport.name}}</h3>
 	<dl class="dl-horizontal">
 		<dt>
