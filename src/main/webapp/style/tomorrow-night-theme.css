@@ -1,0 +1,46 @@
+/* Tomorrow Night Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+.tomorrow-comment, .hljs pre .comment, .hljs pre .title {
+  color: #969896;
+}
+
+.tomorrow-red, .hljs pre .variable, .hljs pre .attribute, .hljs pre .tag, .hljs pre .regexp, .hljs pre .ruby .constant, .hljs pre .xml .tag .title, .hljs pre .xml .pi, .hljs pre .xml .doctype, .hljs pre .html .doctype, .hljs pre .css .id, .hljs pre .css .class, .hljs pre .css .pseudo {
+  color: #cc6666;
+}
+
+.tomorrow-orange, .hljs pre .number, .hljs pre .preprocessor, .hljs pre .built_in, .hljs pre .literal, .hljs pre .params, .hljs pre .constant {
+  color: #de935f;
+}
+
+.tomorrow-yellow, .hljs pre .class, .hljs pre .ruby .class .title, .hljs pre .css .rules .attribute {
+  color: #f0c674;
+}
+
+.tomorrow-green, .hljs pre .string, .hljs pre .value, .hljs pre .inheritance, .hljs pre .header, .hljs pre .ruby .symbol, .hljs pre .xml .cdata {
+  color: #b5bd68;
+}
+
+.tomorrow-aqua, .hljs pre .css .hexcolor {
+  color: #8abeb7;
+}
+
+.tomorrow-blue, .hljs pre .function, .hljs pre .python .decorator, .hljs pre .python .title, .hljs pre .ruby .function .title, .hljs pre .ruby .title .keyword, .hljs pre .perl .sub, .hljs pre .javascript .title, .hljs pre .coffeescript .title {
+  color: #81a2be;
+}
+
+.tomorrow-purple, .hljs pre .keyword, .hljs pre .javascript .function {
+  color: #b294bb;
+}
+
+.hljs pre code {
+  display: block;
+  background: #1d1f21;
+  color: #c5c8c6;
+  font-family: Menlo, Monaco, Consolas, monospace;
+  line-height: 1.5;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+

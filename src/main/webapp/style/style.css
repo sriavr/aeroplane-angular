@@ -1,0 +1,884 @@
+
+@media only screen and (max-width:1280px){
+	body{font-size:100%;}
+}
+@media only screen and (max-width:960px){
+	body{font-size:85%;}
+}
+@media only screen and (max-width:760px){
+	body{font-size:70%;}
+}
+@media only screen and (max-width:480px){
+	body{font-size:60%;}
+}
+/* div{border:1px solid red;} */
+
+body{
+	color:#707070;
+	background-color:#EEE;
+	margin:0;
+	padding: 0;
+	font-family:Calibri;
+}
+
+.page-margins{
+	margin:0 4em;
+}
+h1{
+	font-size:3em;
+
+}
+.spacer{
+	height:4em;
+	clear:both;
+}
+
+
+/*-----------Start Header Styles------------*/
+#header{
+	padding:1em 0;
+	background-color:#FFF;
+}
+#header img{
+	width:20em;
+}
+#header ul{
+	float:right;
+}
+#header ul li{
+	list-style:none;
+	font-weight:700;
+	font-size:1.2em;
+	line-height:1.5;
+}
+#header ul li img{
+	position:absolute;
+	width:1.1em;
+	margin-left:-1.5em;
+	margin-top:.2em;
+}
+/*-----------End Header Styles------------*/
+
+
+/*-----------Start Main Menu Styles------------*/
+#main-menu{
+	text-align:center;
+	background-color:#FFF;
+}
+#main-menu ul{
+	margin:0;
+	padding:0;
+	display:flex;
+}
+#main-menu ul li{
+	background-color:#707070;
+	list-style:none;
+	padding:5px;
+	flex:1;
+	border-radius:10px 10px 0 0;
+	border-right:1px solid #FFF;
+}
+#main-menu ul li:first-child{	
+	border-radius:0 10px 0 0;
+}
+#main-menu ul li:last-child{	
+	border-radius:10px 0 0 0;
+	border:0;
+}
+#main-menu ul li:hover{
+	background-color:#00AEEF;
+}
+#main-menu ul li a{
+	color:#FFF;
+	text-decoration:none;
+	font-size:1.3em;	
+}
+/*-----------End Main Menu Styles------------*/
+
+
+/*-----------Start Banner Styles------------*/
+#banner{
+	background-image:url('../images/banner bg.jpg');
+	background-size:100%;
+    background-repeat: no-repeat;
+}
+#banner  .page-margins{
+	display:flex;
+}
+#banner .page-margins div{
+	float:left;
+}
+#banner .page-margins div:first-child{
+	flex:2;
+}
+#banner .page-margins div:last-child{
+	position:realtive;
+	flex:1;
+}
+#banner .page-margins h1{
+	color:#00AEEF;
+	font-size:4em;
+	margin-top:1.5em;
+	/* float:right; */
+}
+#banner .page-margins img{
+	width:100%;
+	/* height:25em; */
+	/* float:right; */
+	margin:auto;
+	margin-bottom:-5px;
+	overflow:hidden;
+}
+/*-----------End Banner Styles------------*/
+
+
+/*-----------Start Why-Singams Styles------------*/
+#why-singams{
+	background-image:url('../images/why singams.png');
+	color:#FFF;
+	background-size:cover;
+    /* background-repeat: no-repeat; */	
+}
+#why-singams div{
+	margin-left:50%;
+	padding:2em 0;
+}
+#why-singams h1{
+	color:#FFF;
+}
+#why-singams p{
+	color:#FFF;
+	font-size:1.7em;
+}
+/*-----------End Why-Singams Styles------------*/
+
+
+/*-----------Start Our-Services Styles------------*/
+#our-services .service-box{
+	display:flex;
+}
+#our-services .service-box div{
+	background-color:#FFF;
+	margin:1%;
+	padding:1.1em;
+	border-radius:5px;
+	border:1px solid #DDD;
+}
+#our-services .service-box  div div{
+	text-align:center;
+	border:none;
+}
+#our-services .service-box  div div img{
+	height:8em;	
+	background-color:#8EC63F;
+}
+#our-services .service-box  div h2{
+	text-align:center;
+	color:#8EC63F;
+}
+#our-services .service-box  div:hover h2{
+	color:#20ACE2;
+}
+#our-services .service-box  div:hover div img{
+	background-color:#20ACE2;
+}
+#our-services .service-box div p{
+	font-size:1.3em;
+}
+/*-----------End Our-Services Styles------------*/
+
+
+/*-----------Start Special-Plans Styles------------*/
+#special-plans .plan-box-container{
+	display:flex;
+}
+#special-plans .plan-box-container .plan-box{
+	width:32%;
+	margin-right:2%;
+	background-color:#FFF;
+	padding-bottom:5em;
+	position:relative;
+	transition:box-shadow .5s ease;
+	border:1px solid #DDD;
+}
+#special-plans .plan-box-container .plan-box:hover{
+	box-shadow:0 0 10px 7px #BDBDBD;
+	border:1px solid #BDBDBD;
+}
+#special-plans .plan-box-container .plan-box:last-child{
+	margin-right:0;
+}
+#special-plans .plan-box-container .plan-box div.heading{
+	background-color:#00ADEF;
+	color:#FFF;
+	text-align:center;
+	font-size:1.7em;
+	padding:.5em 2em;
+}
+#special-plans .plan-box-container .plan-box div.content{
+	font-size:1.3em;
+	padding:.1em 1em;
+}
+#special-plans .plan-box-container .plan-box div.pricing{
+	font-size:1.5em;
+	color:#00ADEF;
+	text-align:center;
+	width:100%;
+	position:absolute;
+	bottom:0;
+	padding-bottom:15px;
+}
+#special-plans .plan-box-container .plan-box div.pricing p{
+	line-height:0;
+}
+#special-plans .plan-box-container .plan-box div.pricing div.button{
+	background-color:#00ADEF;
+	padding:.3em 1em;
+	border-radius:.5em;
+	color:#FFF;
+	display:inline;
+}
+/*-----------End Special-Plans Styles------------*/
+
+
+/*-----------Start IP-Banner Styles------------*/
+#ip-banner img{
+	width:100%;
+}
+/*-----------End IP-Banner Styles------------*/
+
+
+/*-----------Start IP-Content Styles------------*/
+#ip-content p{
+	font-size:1.7em;
+}
+/*-----------End IP-Content Styles------------*/
+
+
+/*-----------Start Contact Styles------------*/
+#contact-us .contact-form{
+	width:60%;
+	float:left;
+	font-size:1.5em;
+}
+#contact-us .contact-form .textbox{
+	width:80%;
+	height:1.7em;
+}
+#contact-us .contact-form .send-button{	
+	font-size:.8em;
+	color:#FFF;
+	border-radius:5px;
+	padding:.2em 1.5em;
+	background-color:#F36523;
+}
+#contact-us .contact-image{
+	width:40%;
+	float:left;
+	text-align:center;
+}
+#contact-us .contact-image img{
+	width:15em;
+}
+#contact-us .contact-address{
+	width:60%;
+	float:left;
+	font-size:1.5em;
+}
+#contact-us .contact-map{
+	width:40%;
+	float:left;
+	text-align:center;
+}
+#contact-us .contact-map img{
+	width:15em;	
+}
+/*-----------End Contact Styles------------*/
+
+
+/*-----------Start Pre-Footer Styles------------*/
+#pre-footer{
+	background-color:#707070;
+	text-align:center;
+
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+#pre-footer h1{
+	color:#FFF;
+	font-size:1.7em;
+	font-weight:400;
+}
+/*-----------End Pre-Footer Styles------------*/
+
+
+/*-----------Start Footer Styles------------*/
+#footer{
+	background-color:#8EC63F;
+	text-align:right;
+}
+#footer p{
+	margin:0;
+	padding:.3em 0;
+	color:#FFF;
+	font-size:1.1em;
+	
+}
+/*-----------End Footer Styles------------*/
+
+
+/*-----------Start Media Query------------*/
+@media only screen and (max-width:1280px){
+	
+}
+@media only screen and (max-width:760px){
+	.page-margins{
+		margin:0 1em;
+	}
+	#header{
+		padding:.5em 0; 
+	}
+	#banner .page-margins div{
+		flex:1 !important;
+	}	
+	#banner .page-margins h1{
+		margin-top:.5em;
+	}
+	#why-singams div{
+		margin-left:35%;
+		padding:1em;
+	}
+	#our-services .service-box{
+		display:block;
+	}
+	#our-services .service-box div{
+		width:45%;
+		float:left;
+		margin:1%;
+		padding:1%;
+	}
+	#our-services .service-box div div{width:95%;}
+	#our-services .service-box div h2{clear:both;}
+	#our-services .service-box div p{
+		font-size:1.5em;
+	}
+}
+@media only screen and (max-width:480px){
+	.spacer{
+		height:1em;
+	}
+	.page-margins{
+		margin:0 .2em;
+	}
+	#header{
+		padding:.3em 0; 
+	}	
+	#header ul{
+		display:none;
+	}
+	#main-menu ul{
+		display:inline;
+	}
+	#main-menu ul li{
+		display:block;
+		border-radius:0 !important;
+		border:none;
+		border-bottom:1px solid #FFF;
+	}	
+	#banner .page-margins h1{
+		font-size:3em;
+		margin-top:0;
+	}
+	#banner .page-margins img{
+		height:22em;
+	}
+	#why-singams div{
+		margin-left:0;
+	}
+	#our-services .service-box div{
+		width:97%;
+	}
+	#our-services .service-box div p{
+		font-size:1.7em;
+	}
+	#special-plans .plan-box-container{
+		display:block;
+	}
+	#special-plans .plan-box-container .plan-box{
+		width:96%;
+		margin:0 2% 20px;
+	}
+	#contact-us .contact-form{
+		width:100%;
+	}
+	#contact-us .contact-form .textbox{
+		width:90%;
+		height:1.4em;
+	}
+	#contact-us .contact-image{
+		display:none;
+	}	
+	#contact-us .contact-address{
+		width:100%;
+	}
+	#contact-us .contact-map{
+		width:100%;
+		text-align:left;
+	}
+}
+=======
+@media only screen and (max-width:1280px){
+	body{font-size:100%;}
+}
+@media only screen and (max-width:960px){
+	body{font-size:85%;}
+}
+@media only screen and (max-width:760px){
+	body{font-size:70%;}
+}
+@media only screen and (max-width:480px){
+	body{font-size:60%;}
+}
+/* div{border:1px solid red;} */
+
+body{
+	color:#707070;
+	background-color:#EEE;
+	margin:0;
+	padding: 0;
+	font-family:Calibri;
+		margin-left: 0px;
+	width: 100%;
+}
+
+.category-select {
+	padding-top: 5px;
+	height: 42px;
+}
+
+.product-img {
+	height: 170px;
+	width: 200px;
+}
+
+.price-text {
+	width: 50px !important;
+}
+
+.searchBar {
+	margin-left: 10px;
+}
+
+.body-box{
+	background-color:white;
+}
+
+.page-margins{
+	margin:0 4em;
+}
+
+h1{
+	font-size:3em;
+}
+.spacer{
+	height:4em;
+	clear:both;
+}
+
+
+/*-----------Start Header Styles------------*/
+#header{
+	padding:1em 0;
+	background-color:#FFF;
+}
+#header img{
+	width:20em;
+}
+#header ul{
+	float:right;
+}
+#header ul li{
+	list-style:none;
+	font-weight:700;
+	font-size:1.2em;
+	line-height:1.5;
+}
+#header ul li img{
+	position:absolute;
+	width:1.1em;
+	margin-left:-1.5em;
+	margin-top:.2em;
+}
+/*-----------End Header Styles------------*/
+
+
+/*-----------Start Main Menu Styles------------*/
+#main-menu{
+	text-align:center;
+	background-color:#FFF;
+}
+#main-menu ul{
+	margin:0;
+	padding:0;
+	display:flex;
+}
+#main-menu ul li{
+	background-color:#707070;
+	list-style:none;
+	padding:5px;
+	flex:1;
+	border-radius:10px 10px 0 0;
+	border-right:1px solid #FFF;
+}
+#main-menu ul li:first-child{	
+	border-radius:0 10px 0 0;
+}
+#main-menu ul li:last-child{	
+	border-radius:10px 0 0 0;
+	border:0;
+}
+#main-menu ul li:hover{
+	background-color:#00AEEF;
+}
+#main-menu ul li a{
+	color:#FFF;
+	text-decoration:none;
+	font-size:1.3em;	
+}
+/*-----------End Main Menu Styles------------*/
+
+
+/*-----------Start Banner Styles------------*/
+#banner{
+	background-image:url('../images/banner bg.jpg');
+	background-size:100%;
+    background-repeat: no-repeat;
+}
+#banner  .page-margins{
+	display:flex;
+}
+#banner .page-margins div{
+	float:left;
+}
+#banner .page-margins div:first-child{
+	flex:2;
+}
+#banner .page-margins div:last-child{
+	position:realtive;
+	flex:1;
+}
+#banner .page-margins h1{
+	color:#00AEEF;
+	font-size:4em;
+	margin-top:1.5em;
+	/* float:right; */
+}
+#banner .page-margins img{
+	width:100%;
+	/* height:25em; */
+	/* float:right; */
+	margin:auto;
+	margin-bottom:-5px;
+	overflow:hidden;
+}
+/*-----------End Banner Styles------------*/
+
+
+/*-----------Start Why-Singams Styles------------*/
+#why-singams{
+	background-image:url('../images/why singams.png');
+	color:#FFF;
+	background-size:cover;
+    /* background-repeat: no-repeat; */	
+}
+#why-singams div{
+	margin-left:50%;
+	padding:2em 0;
+}
+#why-singams h1{
+	color:#FFF;
+}
+#why-singams p{
+	color:#FFF;
+	font-size:1.7em;
+}
+/*-----------End Why-Singams Styles------------*/
+
+
+/*-----------Start Our-Services Styles------------*/
+#our-services .service-box{
+	display:flex;
+}
+#our-services .service-box div{
+	background-color:#FFF;
+	margin:1%;
+	padding:1.1em;
+	border-radius:5px;
+	border:1px solid #DDD;
+}
+#our-services .service-box  div div{
+	text-align:center;
+	border:none;
+}
+#our-services .service-box  div div img{
+	height:8em;	
+	background-color:#8EC63F;
+}
+#our-services .service-box  div h2{
+	text-align:center;
+	color:#8EC63F;
+}
+#our-services .service-box  div:hover h2{
+	color:#20ACE2;
+}
+#our-services .service-box  div:hover div img{
+	background-color:#20ACE2;
+}
+#our-services .service-box div p{
+	font-size:1.3em;
+}
+/*-----------End Our-Services Styles------------*/
+
+
+/*-----------Start Special-Plans Styles------------*/
+#special-plans .plan-box-container{
+	display:flex;
+}
+#special-plans .plan-box-container .plan-box{
+	width:32%;
+	margin-right:2%;
+	background-color:#FFF;
+	padding-bottom:5em;
+	position:relative;
+	transition:box-shadow .5s ease;
+	border:1px solid #DDD;
+}
+#special-plans .plan-box-container .plan-box:hover{
+	box-shadow:0 0 10px 7px #BDBDBD;
+	border:1px solid #BDBDBD;
+}
+#special-plans .plan-box-container .plan-box:last-child{
+	margin-right:0;
+}
+#special-plans .plan-box-container .plan-box div.heading{
+	background-color:#00ADEF;
+	color:#FFF;
+	text-align:center;
+	font-size:1.7em;
+	padding:.5em 2em;
+}
+#special-plans .plan-box-container .plan-box div.content{
+	font-size:1.3em;
+	padding:.1em 1em;
+}
+#special-plans .plan-box-container .plan-box div.pricing{
+	font-size:1.5em;
+	color:#00ADEF;
+	text-align:center;
+	width:100%;
+	position:absolute;
+	bottom:0;
+	padding-bottom:15px;
+}
+#special-plans .plan-box-container .plan-box div.pricing p{
+	line-height:0;
+}
+#special-plans .plan-box-container .plan-box div.pricing div.button{
+	background-color:#00ADEF;
+	padding:.3em 1em;
+	border-radius:.5em;
+	color:#FFF;
+	display:inline;
+}
+/*-----------End Special-Plans Styles------------*/
+
+
+/*-----------Start IP-Banner Styles------------*/
+#ip-banner img{
+	width:100%;
+}
+/*-----------End IP-Banner Styles------------*/
+
+
+/*-----------Start IP-Content Styles------------*/
+#ip-content p{
+	font-size:1.7em;
+}
+/*-----------End IP-Content Styles------------*/
+
+
+/*-----------Start Contact Styles------------*/
+#contact-us .contact-form{
+	width:60%;
+	float:left;
+	font-size:1.5em;
+}
+#contact-us .contact-form .textbox{
+	width:80%;
+	height:1.7em;
+}
+#contact-us .contact-form .send-button{	
+	font-size:.8em;
+	color:#FFF;
+	border-radius:5px;
+	padding:.2em 1.5em;
+	background-color:#F36523;
+}
+#contact-us .contact-image{
+	width:40%;
+	float:left;
+	text-align:center;
+}
+#contact-us .contact-image img{
+	width:15em;
+}
+#contact-us .contact-address{
+	width:60%;
+	float:left;
+	font-size:1.5em;
+}
+#contact-us .contact-map{
+	width:40%;
+	float:left;
+	text-align:center;
+}
+#contact-us .contact-map img{
+	width:15em;	
+}
+/*-----------End Contact Styles------------*/
+
+
+/*-----------Start Pre-Footer Styles------------*/
+#pre-footer{
+	background-color:#707070;
+	text-align:center;
+
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+#pre-footer h1{
+	color:#FFF;
+	font-size:1.7em;
+	font-weight:400;
+}
+/*-----------End Pre-Footer Styles------------*/
+
+
+/*-----------Start Footer Styles------------*/
+#footer{
+	background-color:#8EC63F;
+	text-align:right;
+}
+#footer p{
+	margin:0;
+	padding:.3em 0;
+	color:#FFF;
+	font-size:1.1em;
+	
+}
+/*-----------End Footer Styles------------*/
+
+
+/*-----------Start Media Query------------*/
+@media only screen and (max-width:1280px){
+	
+}
+@media only screen and (max-width:760px){
+	.page-margins{
+		margin:0 1em;
+	}
+	#header{
+		padding:.5em 0; 
+	}
+	#banner .page-margins div{
+		flex:1 !important;
+	}	
+	#banner .page-margins h1{
+		margin-top:.5em;
+	}
+	#why-singams div{
+		margin-left:35%;
+		padding:1em;
+	}
+	#our-services .service-box{
+		display:block;
+	}
+	#our-services .service-box div{
+		width:45%;
+		float:left;
+		margin:1%;
+		padding:1%;
+	}
+	#our-services .service-box div div{width:95%;}
+	#our-services .service-box div h2{clear:both;}
+	#our-services .service-box div p{
+		font-size:1.5em;
+	}
+}
+@media only screen and (max-width:480px){
+	.spacer{
+		height:1em;
+	}
+	.page-margins{
+		margin:0 .2em;
+	}
+	#header{
+		padding:.3em 0; 
+	}	
+	#header ul{
+		display:none;
+	}
+	#main-menu ul{
+		display:inline;
+	}
+	#main-menu ul li{
+		display:block;
+		border-radius:0 !important;
+		border:none;
+		border-bottom:1px solid #FFF;
+	}	
+	#banner .page-margins h1{
+		font-size:3em;
+		margin-top:0;
+	}
+	#banner .page-margins img{
+		height:22em;
+	}
+	#why-singams div{
+		margin-left:0;
+	}
+	#our-services .service-box div{
+		width:97%;
+	}
+	#our-services .service-box div p{
+		font-size:1.7em;
+	}
+	#special-plans .plan-box-container{
+		display:block;
+	}
+	#special-plans .plan-box-container .plan-box{
+		width:96%;
+		margin:0 2% 20px;
+	}
+	#contact-us .contact-form{
+		width:100%;
+	}
+	#contact-us .contact-form .textbox{
+		width:90%;
+		height:1.4em;
+	}
+	#contact-us .contact-image{
+		display:none;
+	}	
+	#contact-us .contact-address{
+		width:100%;
+	}
+	#contact-us .contact-map{
+		width:100%;
+		text-align:left;
+	}
+}
+
+
