@@ -6,6 +6,7 @@ import java.util.StringTokenizer;
 import javax.ws.rs.DefaultValue;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 
@@ -16,6 +17,27 @@ import com.sridharjammalamadaka.util.HibernateUtil;
 
 @Path("/")
 public class RestInterface {
+
+	@Path("/airport/{code}")
+	@GET
+	@Produces(value = "application/json")
+	public Airport getAirportByCode(@PathParam("code") String code) {
+		Airport airport = new Airport();
+		try {
+			Session session = HibernateUtil.getSessionFactory().openSession();
+			String qry = "from Airport a where a.code = '" + code + "'";
+			List<Airport> list = session.createQuery(qry).list();
+			if (list.size() > 0) {
+				airport = list.get(0);
+			}
+			session.close();
+		} catch (Exception ex) {
+			System.out.println("Error occurred while getting data.");
+			ex.printStackTrace();
+		}
+		return airport;
+
+	}
 
 	@Path("/list")
 	@GET
@@ -28,7 +50,7 @@ public class RestInterface {
 			String qry = "from Airport a";
 			if (filter != null) {
 				StringTokenizer st = new StringTokenizer(filter, ",");
-				if (st.countTokens()>0){
+				if (st.countTokens() > 0) {
 					qry += " where a.type in ( " + filter + ")";
 				}
 			}

@@ -6,6 +6,10 @@ viewAirportsApp.factory("Airport", function($resource) {
 	return $resource("api/list?filter=:filter");
 });
 
+viewAirportsApp.factory("SingleAirport", function($resource) {
+	return $resource("api/airport/:code");
+});
+
 viewAirportsApp.factory("Types", function($resource) {
 	return $resource("api/types");
 });
@@ -14,7 +18,7 @@ viewAirportsApp.config([ '$routeProvider', function($routeProvider) {
 	$routeProvider.when('/airports', {
 		templateUrl : 'partials/airport-list.jsp',
 		controller : 'AirportListCtrl'
-	}).when('/airports/:id', {
+	}).when('/airports/:code', {
 		templateUrl : 'partials/airport-details.jsp',
 		controller : 'AirportDetailCtrl'
 	}).otherwise({
@@ -37,6 +41,11 @@ airportControllers
 							"Railway Stations", "Heliport2", "Bus Stations",
 							"Off-line Point", "Harbours" ];
 					$scope.defaultFilter = '"Airports", "Military Airport", "Sea Plane Base", "Other Airport","Railway Stations", "Heliport2", "Bus Stations","Off-line Point","Harbours"';
+
+					$scope.airportPopover = {
+						templateUrl : 'partials/airport-mini-details.jsp',
+						title : 'Airport'
+					};
 
 					Types.query(function(data) {
 						$log.debug("successfully loaded types");
@@ -440,11 +449,12 @@ airportControllers
 				});
 
 airportControllers.controller('AirportDetailCtrl', function($scope,
-		$routeParams, Airport, $http, $location, $log) {
-	$log.debug("Inside AirportDetailCtrl");
-	Airport.get({
-		id : $routeParams.id
+		$routeParams, Airport, SingleAirport, $http, $location, $log) {
+	$log.debug("Inside AirportDetailCtrl code: " + $routeParams.code);
+	SingleAirport.get({
+		code : $routeParams.code
 	}, function(data) {
+		$log.debug("Successfully returned result for airport details")
 		$scope.airport = data;
 	});
 });

@@ -15,8 +15,8 @@
 				<div class="facet-panel checkbox">
 					<!--  <label><input type="checkbox" name="all" ng-model="all"
 						ng-click="allClicked()" value="All" ng-checked="true"> All </label>  <br> -->
-					<span ng-repeat="type in types track by $index"> <label> <input
-							type="checkbox" name="selectedTypes[]" value={{type}}
+					<span ng-repeat="type in types track by $index"> <label>
+							<input type="checkbox" name="selectedTypes[]" value={{type}}
 							ng-checked="true" ng-click="toggleSelectionType(type)" />
 							{{type}}
 					</label><br>
@@ -86,7 +86,11 @@
 								</div>
 								<div class="col-md-6">
 									<h3 style="padding-left: 10px;">
-										<a href="index.jsp#/airports/{{airport.code}}">{{airport.name}}</a>
+										<a href="index.jsp#/airports/{{airport.code}}"
+											popover-template="airportPopover.templateUrl"
+											popover-placement="left"
+											popover-title="{{airportPopover.title}}"
+											popover-trigger="mouseenter">{{airport.name}}</a>
 									</h3>
 
 									<div data-score="{{ airport.rating }}" class="rating"></div>
