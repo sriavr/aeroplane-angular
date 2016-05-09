@@ -61,6 +61,16 @@
 						class="glyphicon sort-icon" ng-show="sortKey=='rating'"
 						ng-class="{'glyphicon-chevron-up':!reverse,'glyphicon-chevron-down':reverse}"></span>
 					</label>
+					<label class="btn btn-default" ng-model="radioModel"
+						ng-click="sort('elev')" uncheckable>Elevation<span
+						class="glyphicon sort-icon" ng-show="sortKey=='elev'"
+						ng-class="{'glyphicon-chevron-up':!reverse,'glyphicon-chevron-down':reverse}"></span>
+					</label>
+					<label class="btn btn-default" ng-model="radioModel"
+						ng-click="sort('name')" uncheckable>Name<span
+						class="glyphicon sort-icon" ng-show="sortKey=='name'"
+						ng-class="{'glyphicon-chevron-up':!reverse,'glyphicon-chevron-down':reverse}"></span>
+					</label>
 				</div>
 			</div>
 		</div>

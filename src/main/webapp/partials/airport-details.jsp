@@ -53,7 +53,7 @@
 							<h5>{{airport.state}}</h5>
 						</dd>
 						<dt>
-							<h5>State</h5>
+							<h5>Country</h5>
 						</dt>
 						<dd>
 							<h5>{{airport.country}}</h5>
